@@ -61,31 +61,30 @@ def clear():
 
 
 # Driver code 
-if _name_ == "_main_": 
-	# create a GUI window 
-	gui = Tk() 
+if__name__ == "__main__"
+gui = Tk() 
 
 	# set the background colour of GUI window 
-	gui.configure(background="light green") 
+gui.configure(background="light green") 
 
 	# set the title of GUI window 
-	gui.title("Simple Calculator") 
+gui.title("Simple Calculator") 
 
 	# set the configuration of GUI window 
-	gui.geometry("270x150") 
+gui.geometry("270x150") 
 
 	# StringVar() is the variable class 
 	# we create an instance of this class 
-	equation = StringVar() 
+equation = StringVar() 
 
 	# create the text entry box for 
 	# showing the expression . 
-	expression_field = Entry(gui, textvariable=equation) 
+expression_field = Entry(gui, textvariable=equation) 
 
 	# grid method is used for placing 
 	# the widgets at respective positions 
 	# in table like structure . 
-	expression_field.grid(columnspan=4, ipadx=70)
+expression_field.grid(columnspan=4, ipadx=70)
 
 	# create a Buttons and place at a particular 
 	# location inside the root window . 
@@ -159,5 +158,5 @@ if _name_ == "_main_":
 					command=lambda: press('.'), height=1, width=7) 
 	Decimal.grid(row=6, column=0) 
 	# start the GUI 
-	gui.mainloop()
+gui.mainloop()
 
